@@ -72,15 +72,34 @@
 <h2 id="currently-unsupported-rest-apis">Currently Unsupported REST APIs</h2>
 <h3 id="slp">SLP</h3>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>/slp/list GET</li>
+<li>/slp/list POST</li>
+<li>/slp/list/{tokenId} GET</li>
+<li>/slp/convert/{address} GET</li>
+<li>/slp/convert POST</li>
+<li>/slp/balancesForAddress/{address} GET</li>
+<li>/slp/balancesForAddress POST</li>
+<li>/slp/balancesForToken/{tokenId} GET</li>
+<li>/slp/balancesForToken POST</li>
+<li>/slp/balance/{address}/{tokenId}</li>
+<li>/slp/balance POST</li>
+<li>/slp/validateTxid/{txid} GET</li>
+<li>/slp/validateTxid POST</li>
+<li>/slp/tokenStats/{tokenId} GET</li>
+<li>/slp/tokenStats POST</li>
+<li>/slp/txDetails/{txid} GET</li>
+<li>/slp/transactions/{tokenId}/{address} GET</li>
+<li>/slp/transactions POST</li>
+<li>/slp/transactionHistoryAllTokens/{address} GET</li>
+<li>/slp/transactionHistoryAllTokens POST</li>
+<li>/slp/burnTotal/{transactionId} GET</li>
+<li>/slp/burnTotal POST</li>
 </ul>
 <h3 id="cashaccounts">CashAccounts</h3>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>/cashAccounts/lookup/{account}/{number}/{collision} GET</li>
+<li>/cashAccounts/check/{account}/{number} GET</li>
+<li>/cashAccounts/reverselookup/{address} GET</li>
 </ul></div>
             </div>
         </div>
@@ -165,5 +184,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-04-28 11:46:47.558194+00:00
+Build Date UTC : 2021-04-28 11:58:22.636820+00:00
 -->
