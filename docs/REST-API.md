@@ -71,7 +71,7 @@
 /util/validateAddress/{address}
 /util/validateAddress
 ```
-
+___
 
 ## Currently Unsupported Endpoints
 ### SLP
