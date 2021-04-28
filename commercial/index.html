@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Commercial - My Docs</title>
+        <title>The ActorForth organization and BitcoinCash - My Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -40,7 +40,7 @@
                                 <a href="../REST%20API/" class="nav-link">REST API</a>
                             </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">Commercial</a>
+                                <a href="./" class="nav-link">The ActorForth organization and BitcoinCash</a>
                             </li>
                         </ul>
 
@@ -77,12 +77,26 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#the-actorforth-organization-and-bitcoincash" class="nav-link">The ActorForth organization and BitcoinCash</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#actorforths-restful-bch-service" class="nav-link">ActorForth's RESTful BCH Service</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="the-actorforth-organization-and-bitcoincash">The ActorForth organization and BitcoinCash</h1>
+<p>The ActorForth organization is focused on innovative development in the cryptoledger spaces. What's unique about our team is that several of the core principles of the group individually have over 30 years of software engineering and architecture experience. We founded the Proteus Group which consists of <a href="https://proteus-tech.com">Proteus Technologies</a> and <a href="https://proteus-ops.com">Proteus Ops</a> that introduced bleeding edge language, software, and operations in the United States, UK, Europe, Japan, and SEAsia since 1995. We launched the ActorForth organization in 2018 as a result of our core belief that cryptoledgers are going to revolutionize the world in terms of both commerce &amp; governance, and that the development tools and languages available today to the crypto community are completely inadequate to meet that potential. We've done innovative projects for clients using Bitcoin, Ethereum, Stellar, and Bitcoin Cash. Today we believe the direction that BitcoinCash has adopted and the culture of its community are best placed to demonstrate the innovative possibilities of cryptoledgers and benefit from our organizational experience. That belief was recently reinforced by the great community response we received in our efforts leading the new <a href="https://github.com/ActorForth/Auction-Protocol/blob/main/CHIP-2021-03-12_Multiple_OP_RETURN_for_Bitcoin_Cash.md">CHIP process</a> for pushing through the <a href="https://bitcoincashresearch.org/t/chip-2021-03-multiple-op-returns-for-bitcoin-cash/315/12">"Multiple OP_RETURN" proposal</a> for the upcoming May release. We anticipate that process will continue to mature and guide innovation within the Bitcoin Cash community while also keeping it on track with its core purpose to be the best peer-to-peer digital cash in the solar system!</p>
+<p>In 2020 our first Bitcoin Cash effort was to attempt to introduce some core software engineering processes and tools to 1) make it easier to onboard dev groups to create new Bitcoin Cash focused applications, and 2) vastly increase the quality and reliability of these systems both in terms of functionality and non-functional terms such as system uptime, performance, and scalibility. To wit, we identified Bitcoin.com's RESTful API and the SLPDB systems as core services that any dev group would need to be able to host local isolated dev/test environments. This project is called <a href="https://github.com/ActorForth/bch-toolkit">BCH-toolkit</a> and is a simple to install code base consisting of multiple Docker images from over 10 existing core open source Bitcoin Cash projects + an implementation of Bitcoin.com's proprietary NSight service interface that we've open sourced called <a href="https://github.com/ActorForth/OpenSight">OpenSight</a>. As regtest mode was broken for most of these projects we did a lot of updates to repair this problem and have submitted those PRs upstreams to their main projects. We've also added SLP support (mostly SLP addresses) to several that didn't have such before and have also submitted those PRs upstream. There are also other core Bitcoin Cash systems that we plan to bring into the BCH-toolkit project so anyone can run them locally quickly and easily under regtest mode. Our driving policy is that we want to contribute to the open source nature of the community and the diversity of implementations of the core protocols. We believe having multiple implementations of the Bitcoin Cash key instructure and protocols is extremely healthy and valuable to achieving the goals and realizing the potential of Bitcoin Cash and you will see this as a driving force in 100% of our efforts. A healthy Bitcoin Cash community should have enough traction to support a sufficient variety of quality implementations to ensure it remains fully decentralized.</p>
+<p>BCH-toolkit was designed to be a dev/test tool and not focused on Main Net because Bitcoin.com had been doing a fine job of supporting the Bitcoin Cash development community for longer than we've even been aware of Bitcoin Cash. So imagine our surprise on March 31st when we discovered that the RESTful API services of Bitcoin.com were going to be decommissioned and are referring their users to <a href="https://fullstack.cash/">Fullstack.cash</a> to continue their service! As it happens we're also big fans of Chris Troutner's (the guy behind Fullstack.cash) work and have incorporated his Javascript apis, bch-api &amp; bch-js, into BCH-toolkit while adding missing regtest address support for both. We believe Fullstack.cash will be an increasingly important commercial &amp; community member of the Bitcoin Cash community - especially for those focused on Javascript based systems. Fitting in with our belief that diversity of protocol implementations being an important thing to maintain, our focus is on more type-safe languages such as C++, Elm, and Typescript by providing implementations of core systems in these languages and to keep as much API compatibility with the original service as possible so we have deployed a Main Net version of our BCH-toolkit to duplicate the soon-to-be decommissioned offering at rest.bitcoin.com as another alternative for Bitcoin Cash developers and users. As we stablize these extended capabilities we will offer them as updated features of our open source BCH-toolkit as well so others can host their own deployments in either Main Net or regtest modes (and likely other test nets as well if there is sufficient interest).</p>
+<h1 id="actorforths-restful-bch-service">ActorForth's RESTful BCH Service</h1></div>
             </div>
         </div>
 

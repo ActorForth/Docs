@@ -40,7 +40,7 @@
                                 <a href="./" class="nav-link">REST API</a>
                             </li>
                             <li class="navitem">
-                                <a href="../commercial/" class="nav-link">Commercial</a>
+                                <a href="../commercial/" class="nav-link">The ActorForth organization and BitcoinCash</a>
                             </li>
                         </ul>
 
@@ -94,103 +94,93 @@
 
 <h2 id="supported-endpoints">Supported Endpoints</h2>
 <h3 id="address">Address</h3>
-<ul>
-<li>/address/details/{address}</li>
-<li>/address/details</li>
-<li>/address/utxo/{address}</li>
-<li>/address/utxo</li>
-<li>/address/unconfirmed/{address}</li>
-<li>/address/unconfirmed</li>
-<li>/address/fromXPub/{xpub}</li>
-<li>/address/transactions</li>
-</ul>
+<pre><code>/address/details/{address}
+/address/details
+/address/utxo/{address}
+/address/utxo
+/address/unconfirmed/{address}
+/address/unconfirmed
+/address/fromXPub/{xpub}
+/address/transactions
+</code></pre>
 <h3 id="block">Block</h3>
-<ul>
-<li>/block/detailsByHash/{hash}</li>
-<li>/block/detailsByHeight/{height}</li>
-</ul>
+<pre><code>/block/detailsByHash/{hash}
+/block/detailsByHeight/{height}
+</code></pre>
 <h3 id="blockchain">BlockChain</h3>
-<ul>
-<li>/blockchain/getBestBlockHash</li>
-<li>/blockchain/getBlockchainInfo</li>
-<li>/blockchain/getBlockCount</li>
-<li>/blockchain/getBlockHeader/{hash}</li>
-<li>/blockchain/getBlockHeader</li>
-<li>/blockchain/getChainTips</li>
-<li>/blockchain/getDifficulty</li>
-<li>/blockchain/getMempoolEntry/{txid}</li>
-<li>/blockchain/getMempoolEntry</li>
-<li>/blockchain/getMempoolInfo</li>
-<li>/blockchain/getRawMempool</li>
-<li>/blockchain/getTxOut/{txid}/{n}</li>
-<li>/blockchain/getTxOutProof/{txid}</li>
-<li>/blockchain/getTxOutProof</li>
-<li>/blockchain/verifyTxOutProof/{proof}</li>
-<li>/blockchain/verifyTxOutProof</li>
-</ul>
+<pre><code>/blockchain/getBestBlockHash
+/blockchain/getBlockchainInfo
+/blockchain/getBlockCount
+/blockchain/getBlockHeader/{hash}
+/blockchain/getBlockHeader
+/blockchain/getChainTips
+/blockchain/getDifficulty
+/blockchain/getMempoolEntry/{txid}
+/blockchain/getMempoolEntry
+/blockchain/getMempoolInfo
+/blockchain/getRawMempool
+/blockchain/getTxOut/{txid}/{n}
+/blockchain/getTxOutProof/{txid}
+/blockchain/getTxOutProof
+/blockchain/verifyTxOutProof/{proof}
+/blockchain/verifyTxOutProof
+</code></pre>
 <h3 id="control">Control</h3>
-<ul>
-<li>/control/getInfo</li>
-<li>/control/getNetworkInfo</li>
-</ul>
+<pre><code>/control/getInfo
+/control/getNetworkInfo
+</code></pre>
 <h3 id="mining">Mining</h3>
-<ul>
-<li>/mining/getMiningInfo</li>
-<li>/mining/getNetworkHashps</li>
-</ul>
+<pre><code>/mining/getMiningInfo
+/mining/getNetworkHashps
+</code></pre>
 <h3 id="rawtransactions">RawTransactions</h3>
-<ul>
-<li>/rawtransactions/decodeRawTransaction/{hex}</li>
-<li>/rawtransactions/decodeRawTransaction</li>
-<li>/rawtransactions/decodeScript/{hex}</li>
-<li>/rawtransactions/decodeScript</li>
-<li>/rawtransactions/getRawTransaction/{txid}</li>
-<li>/rawtransactions/getRawTransaction</li>
-<li>/rawtransactions/sendRawTransaction/{hex}</li>
-<li>/rawtransactions/sendRawTransaction</li>
-</ul>
+<pre><code>/rawtransactions/decodeRawTransaction/{hex}
+/rawtransactions/decodeRawTransaction
+/rawtransactions/decodeScript/{hex}
+/rawtransactions/decodeScript
+/rawtransactions/getRawTransaction/{txid}
+/rawtransactions/getRawTransaction
+/rawtransactions/sendRawTransaction/{hex}
+/rawtransactions/sendRawTransaction
+</code></pre>
 <h3 id="transaction">Transaction</h3>
-<ul>
-<li>/transaction/details/{txid}</li>
-<li>/transaction/details</li>
-</ul>
+<pre><code>/transaction/details/{txid}
+/transaction/details
+</code></pre>
 <h3 id="util">Util</h3>
-<ul>
-<li>/util/validateAddress/{address}</li>
-<li>/util/validateAddress</li>
-</ul>
+<pre><code>/util/validateAddress/{address}
+/util/validateAddress
+</code></pre>
 <h2 id="currently-unsupported-endpoints">Currently Unsupported Endpoints</h2>
 <h3 id="slp">SLP</h3>
-<ul>
-<li>/slp/list GET</li>
-<li>/slp/list POST</li>
-<li>/slp/list/{tokenId} GET</li>
-<li>/slp/convert/{address} GET</li>
-<li>/slp/convert POST</li>
-<li>/slp/balancesForAddress/{address} GET</li>
-<li>/slp/balancesForAddress POST</li>
-<li>/slp/balancesForToken/{tokenId} GET</li>
-<li>/slp/balancesForToken POST</li>
-<li>/slp/balance/{address}/{tokenId}</li>
-<li>/slp/balance POST</li>
-<li>/slp/validateTxid/{txid} GET</li>
-<li>/slp/validateTxid POST</li>
-<li>/slp/tokenStats/{tokenId} GET</li>
-<li>/slp/tokenStats POST</li>
-<li>/slp/txDetails/{txid} GET</li>
-<li>/slp/transactions/{tokenId}/{address} GET</li>
-<li>/slp/transactions POST</li>
-<li>/slp/transactionHistoryAllTokens/{address} GET</li>
-<li>/slp/transactionHistoryAllTokens POST</li>
-<li>/slp/burnTotal/{transactionId} GET</li>
-<li>/slp/burnTotal POST</li>
-</ul>
+<pre><code>/slp/list GET
+/slp/list POST
+/slp/list/{tokenId} GET
+/slp/convert/{address} GET
+/slp/convert POST
+/slp/balancesForAddress/{address} GET
+/slp/balancesForAddress POST
+/slp/balancesForToken/{tokenId} GET
+/slp/balancesForToken POST
+/slp/balance/{address}/{tokenId}
+/slp/balance POST
+/slp/validateTxid/{txid} GET
+/slp/validateTxid POST
+/slp/tokenStats/{tokenId} GET
+/slp/tokenStats POST
+/slp/txDetails/{txid} GET
+/slp/transactions/{tokenId}/{address} GET
+/slp/transactions POST
+/slp/transactionHistoryAllTokens/{address} GET
+/slp/transactionHistoryAllTokens POST
+/slp/burnTotal/{transactionId} GET
+/slp/burnTotal POST
+</code></pre>
 <h3 id="cashaccounts">CashAccounts</h3>
-<ul>
-<li>/cashAccounts/lookup/{account}/{number}/{collision} GET</li>
-<li>/cashAccounts/check/{account}/{number} GET</li>
-<li>/cashAccounts/reverselookup/{address} GET</li>
-</ul></div>
+<pre><code>/cashAccounts/lookup/{account}/{number}/{collision} GET
+/cashAccounts/check/{account}/{number} GET
+/cashAccounts/reverselookup/{address} GET
+</code></pre></div>
             </div>
         </div>
 
