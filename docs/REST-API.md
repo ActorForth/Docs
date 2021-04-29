@@ -71,9 +71,7 @@
 /util/validateAddress/{address}
 /util/validateAddress
 ```
-___
 
-## Currently Unsupported Endpoints
 ### SLP
 ```
 /slp/list GET
@@ -99,6 +97,9 @@ ___
 /slp/burnTotal/{transactionId} GET
 /slp/burnTotal POST
 ```
+___
+
+## Currently Unsupported Endpoints
 
 ### CashAccounts
 ```
